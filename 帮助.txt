@@ -1,0 +1,26 @@
+首先在本地配置自己的用户名和EMAIL
+
+git config --global user.name "guodong"
+git config --global user.email 1234@qq.com
+
+生成密钥
+ssh-keygen -t rsa -C "1234@qq.com" //邮箱同上（两次回车 不输入密码）
+
+打开 C:\Users\WANGGUODONG\.ssh下的id_rsa.pub文件
+复制所有内容到github网页中登陆自己的账号，然后再account setting中，找到SSH KEY讲复制的密钥加入
+
+检验是否链接上了github
+
+ssh git@github.com
+------------------------------------------
+//正常情况下，回显如下
+PTY allocation request failed on channel 0
+Hi plinx! You've successfully authenticated, but GitHub does not provide shell access.
+Connection to github.com closed.
+------------------------------------------
+
+设置本地的远程服务器地址： git remote add origin git@github.com:SIMILARDREAM/Similar.git即可
+
+以后就可以进行pull push操作了
+
+
