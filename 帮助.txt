@@ -9,7 +9,7 @@ ssh-keygen -t rsa -C "1234@qq.com" //邮箱同上（两次回车 不输入密码）
 打开 C:\Users\WANGGUODONG\.ssh下的id_rsa.pub文件
 复制所有内容到github网页中登陆自己的账号，然后再account setting中，找到SSH KEY讲复制的密钥加入
 
-检验是否链接上了github
+在命令行中检验是否链接上了github
 
 ssh git@github.com
 ------------------------------------------
