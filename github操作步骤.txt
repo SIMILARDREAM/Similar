@@ -1,0 +1,41 @@
+设置本地的远程服务器地址(在本地建立一个文件夹用于存放服务器上面的文件，然后右键 git init here  然后右键git bash 然后执行后面的命令)： git remote add origin git@github.com:SIMILARDREAM/Similar.git
+
+
+
+2.拉服务器代码了
+右键 git init here
+右键git bash
+
+git pull origin master
+
+3.修改本地的文件后push
+看文件改了没有 git status
+
+git add *
+git commit -a -m "注释"
+git push origin master
+
+4.把一些常用命令了解一下  merge branch checkout
+
+5.建立分支
+git branch 查看本地有哪些分支
+
+git branch 名称(可以建立分支)
+
+git checkout 分支名称(如果名称存在就切换，如果名称不存在就建立)
+切换到相应的分支
+
+然后push
+
+分支要合并到master
+先切换到master
+然后 git merge 分支名称
+
+6.流程
+一般的流程是 在分支上修改代码
+commit 后 切换到master 然后 pull代码
+再合并分支，再提交服务器
+
+
+7.删除branch
+git branch -d 分支名称
